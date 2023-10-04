@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fasthand&display=swap');
+
+body {
+    background-color: #282c34;
+    color: #ffffff;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px;
+}
+
+.titulo {
+    text-align: center;
+    border: 4px solid #61dafb;
+    padding: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 900;
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+
+hr {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border: none;
+    border-top: 2px dashed #61dafb;
+    width: 50%;
+}
+
+legend {
+    background-color: #282c34;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3em;
+    border: none;
+}
+label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5em;
+}
+fieldset:focus-within>legend {
+    background-color: #61dafb;
+    color: #282c34;
+}
+
+fieldset {
+    background-color: #282c34;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+p {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.7em;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: #ffffff;
+    color: #282c34;
+    outline: none;
+    box-shadow: 0 0 5px #61dafb;
+}
+
+input,
+select,
+textarea {
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px 0;
+    height: 40px;
+    padding: 5px;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+select {
+    text-align: left;
+}
+
+.botones {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #61dafb;
+    color: #282c34;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2em;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #282c34;
+    box-shadow: 0 0 5px #61dafb;
+}

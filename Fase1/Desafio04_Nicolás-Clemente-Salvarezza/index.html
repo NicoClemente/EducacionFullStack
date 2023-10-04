@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- <link rel="stylesheet" href="./style/style2.css" />  -->
+    <!-- <link rel="stylesheet" href="./style/style3.css" /> -->
+    <title>Afiliacion</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Veni al Gym!💪</h1>
+    </header>
+    <main>
+        <form action="https://postman-echo.com/post" method="POST">
+            <fieldset>
+                <legend>🙋‍♂️Datos Personales👀</legend>
+                <label> Nombre:*<input name="nombre" required type="text" /></label>
+                <label>Apellido:*<input required name="apellido" type="text" /></label>
+                <label>Documento:*<input required name="documento" type="text" /></label>
+
+                <label> Nacionalidad:*<select name="nacionalidad" required>
+                        <option value="">- Seleccionar -</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasileña">Brasileña</option>
+                        <option value="Uruguaya">Uruguaya</option>
+                        <option value="Otra">Otra</option>
+                    </select></label>
+                <label for=""> Contanos un poco de vos...
+                    <textarea name="acercaDe" cols="30" rows="10"></textarea></label>
+
+                <label> Sexo:* </label>
+
+                <label><input type="radio" name="sexo" value="Femenino" checked="checked" required />Femenino</label>
+                <label><input type="radio" name="sexo" value="OtroMaOtrosculino" />Masculino</label>
+                <label></label> <input type="radio" name="sexo" value="Otro" />Otro</label>
+            </fieldset>
+
+            <hr />
+
+            <fieldset>
+                <legend>📱Datos de Contacto💌</legend>
+                Telefono:
+                <input placeholder="Codigo de area y numero" type="tel" name="telefono" />
+                <br />
+                Direccion de correo electronico:*
+                <input placeholder="Ej: mail@gmail.com" type="email" name="email" />
+            </fieldset>
+            <hr />
+            <fieldset id="actividades">
+                <legend>🚴Actividades🤸‍♂️</legend>
+                <p>Por favor, indica cuales actividades te interesan.</p>
+                <p>Sede Palermo:</p>
+                <label><input type="checkbox" name="BasquetPalermo" />Basquet</label>
+                <label><input type="checkbox" name="BoxeoPalermo" />Boxeo</label>
+                <label><input type="checkbox" name="FutbolPalermo" />Futbol</label>
+                <label><input type="checkbox" name="TenisPalermo" />Tenis </label>
+                <p>Sede Rosario:</p>
+                <label><input type="checkbox" name="BasquetRosario" />Basquet</label>
+                <label><input type="checkbox" name="FutbolRosario" />Futbol</label>
+                <label><input type="checkbox" name="RugbyRosario" />Rugby</label>
+                <label><input type="checkbox" name="VoleyRosario" />Voley</label>
+            </fieldset>
+
+            <label><input type="checkbox" name="condiciones" required />Acepto las
+                condiciones* </label> <br>
+            <label><input type="checkbox" name="novedades" />Deseo recibir novedades
+                <br /></label>
+
+            <p>*: campo obligatorio. </p>
+
+            <div class="botones">
+                <button type="submit">Iniciar afiliacion</button>
+                <button type="reset">Restablecer</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
