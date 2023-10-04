@@ -43,5 +43,7 @@ console.log(
 
       cambiarColorFondo();
     }
-   
+    const h2Element = document.querySelector("main h2");
+
+    h2Element.style.color = 'white';
   });
